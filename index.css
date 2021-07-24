@@ -1,0 +1,94 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+}
+body{
+    background:grey;
+    transition:all .3s ease;
+}
+h1{
+    text-align:center;
+    padding:20px 0;
+}
+
+
+.container{
+    position:relative;
+    width:60%;
+    margin:0 auto;
+}
+.number{
+    width:150px;
+    height:100px;
+    background:white;
+    font-size:5rem;
+    margin:2rem auto;
+    text-align:center;
+    
+}
+.range{
+    text-align:center;
+    font-size:18px;
+}
+.number p{
+    text-align:center;
+}
+
+.main{
+    width:95%;
+    margin:2rem auto;
+    text-align:center;
+}
+.message{
+    margin:1rem;
+    font-size:20px;
+}
+
+.guess{
+    height:80px;
+    font-size:30px;
+    text-align:center;
+    width:100px;
+    margin-bottom:1rem;
+    
+}
+.again{
+    margin-top:1rem;
+}
+.btn{
+    padding:10px 20px;
+    font-size:20px;
+}
+.btn:hover{
+    cursor:pointer;
+}
+.label-score{
+    margin-top:1rem;
+    font-size:20px;
+}
+.label-highscore{
+    font-size:20px;
+    
+}
+@media only screen and (min-width:600px){
+    .main{
+        display:flex;
+        flex-direction:row;
+        border:1px solid black;
+        justify-content:center;
+        padding:30px;
+    }
+    .left{
+        margin-right:30px;
+    }
+    .left .message{
+        font-size:30px;
+    }
+    .right p{
+        font-size:3rem;
+    }
+    .right .label-highscore{
+        margin-left:3.5rem;
+    }
+}
