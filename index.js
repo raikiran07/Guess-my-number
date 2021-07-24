@@ -6,7 +6,7 @@ const userName = prompt("Enter your first name:");
 let number = document.querySelector(".number");
 
 let randNum = Math.trunc(Math.random()*20+1);
-//console.log(randNum);
+console.log(randNum);
 let message = document.querySelector(".message");
 let score = 20;
 let highscore = 20;
@@ -27,6 +27,9 @@ check.addEventListener('click',function(){
 //        message.textContent = "Congratulations...";
         displayMessage(`Congratulations ${userName}`);
         document.querySelector("body").style.backgroundColor="green";
+        document.querySelector(".number").style.width = "230px";
+        document.querySelector(".main").style.borderColor="white";
+        document.querySelector(".main").style.borderWidth="5px";
         if(score>dummyScore){
             highscore = score;
             dummyScore = highscore;
